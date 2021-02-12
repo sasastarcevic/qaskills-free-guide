@@ -1,13 +1,16 @@
 var assert = require('assert')
 
-const checkQASkills = (name) => {
-  return name == "QASkills"
+const getQASkillsName = () => {
+  return "QASkills";
 }
 
-describe('Test method which checks if given string is QASkills', function () {
+describe('Test which checks if given strings are equal', function () {
 
-    it('should return TRUE because correct string is passed', function () {
-     assert.ok(checkQASkills('Skills'))
+    it('should check is input value equal to QASkills name value', function () {
+      var inputValue = "Write first automation test with support from";
+      var qaskillsName = getQASkillsName();
+      
+      assert.strictEqual(inputValue, qaskillsName);
     });
 
 });
